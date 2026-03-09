@@ -161,6 +161,177 @@ input {
     border-radius: 50%;
 }
 
+/* aside */
+
+.aside {
+    padding-right: 5.9rem;
+}
+
+.aside__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.6rem;
+}
+
+.aside__header {
+    font-size: 2.0rem;
+    font-weight: 400;
+    line-height: 115%;
+}
+
+.aside__sort {
+    display: flex;
+}
+
+.aside__sort-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 114%;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.aside__sort-select {
+    display: flex;
+    align-items: center;
+}
+
+.aside__sort-select span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 114%;
+}
+
+.aside__sort-img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.4rem;
+}
+
+.aside__sort-img img {
+    width: 0.7rem;
+    height: 0.7rem;
+    cursor: pointer;
+}
+
+.aside__sort-img img:nth-child(1) {
+    margin-bottom: 0.3rem;
+}
+
+.aside__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22.6rem;
+    border-radius: 1.5rem;
+    padding: 1.9rem 0 1.9rem 1.9rem;
+    background-image: url('../img/aside-item.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.aside__item:nth-child(3) {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.aside__views {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 119%;
+    z-index: 10;
+}
+
+.aside__footer {
+    position: relative;
+    z-index: 10;
+}
+
+.aside__item-name {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 117%;
+    margin-bottom: 0.5rem;
+}
+
+.aside__item-date {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 114%;
+}
+
+.aside__bottom {
+    padding: 2.5rem 0 2rem 0rem;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.aside__favourite {
+    margin-bottom: 6rem;
+}
+
+.aside__favourite-text {
+    font-size: 2.0rem;
+    font-weight: 400;
+    line-height: 115%;
+    margin-bottom: 2.0rem;
+}
+
+.aside__genre-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding-right: 5rem;
+}
+
+.aside__genre {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 117%;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
+
+.perple {
+    background-color: #8066F6;
+}
+
+.orange {
+    background-color: #E1784F;
+}
+
+.green {
+    background-color: #63CFE1;
+}
+
+.aside__add {
+    display: flex;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 114%;
+    cursor: pointer;
+}
+
+.aside__add-round {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2A2F;
+    margin-right: 0.5rem;
+}
+
+.gray {
+    background-color: #2B2A2F;
+}
+
 /* main */
 
 .main-display__trailer {
@@ -177,6 +348,21 @@ input {
     border-radius: 1.6rem;
     padding: 1.9rem 0 1.9rem 1.9rem;
 }
+
+.main-display__trailer::after,
+.trending__item::after,
+.popular__item::after,
+.aside__item::after,
+.aside__item::after {
+    content: '';
+    position: absolute;
+    display: block;
+    inset: 0;
+    border-radius: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.04);
+    z-index: 0;
+}
+
 
 .main-display__views {
     font-size: 1.6rem;
@@ -221,8 +407,6 @@ input {
     border-radius: 0.2rem;
 }
 
-/* .main-display__trending {} */
-
 .title {
     display: flex;
     justify-content: space-between;
@@ -231,12 +415,6 @@ input {
     padding-bottom: 3.5rem;
     padding-right: 1rem;
 }
-
-/* .title__left {
-    font-size: 2.0rem;
-    font-weight: 400;
-    line-height: 115%;
-} */
 
 .title__left,
 .title__right {
@@ -303,6 +481,7 @@ input {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 1.6rem;
     padding: 0.4rem 1.3rem;
+    z-index: 10;
 }
 
 .trending__footer,
@@ -388,14 +567,6 @@ input {
     padding: 0.8rem 1.9rem 0.8rem 6.4rem;
 }
 
-.popular__footer-left {}
-
-.button-play__wrap {}
-
-.button-play {}
-
-.popular__title {}
-
 .popular__header {
     font-size: 1.0rem;
     font-weight: 400;
@@ -419,8 +590,6 @@ input {
     line-height: 120%;
     margin-left: 0.4rem;
 }
-.popular__img {}
-
 
 /* media grid */
 
